@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+        <h1>Contador de letras</h1>
+        <input type="text" placeholder="Contador" id="input">
+        <input type="number" id="number" class="number" disabled>
+        <p></p>
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", e => {
+                contadorLetra()
+            })
+
+            const contadorLetra = () =>{
+                const input = document.getElementById("input")
+                const p = document.querySelector("p")
+                const number = document.getElementById("number")
+
+                input.addEventListener("input", e =>{
+                    number.value = e.target.value.length
+                    p.textContent = e.target.value
+                })
+
+            }
+
+        </script>
+</body>
+</html>

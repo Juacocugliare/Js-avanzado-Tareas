@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Modulo 2 JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+        <button class="boton alternar"></button>
+
+        <button class="boton alternar2"></button>
+
+        <button class="boton alternar3"></button>
+
+    <script>
+        const alternar = document.getElementsByClassName("alternar")[0];
+
+        alternar.addEventListener('click', function(e) {
+            e.currentTarget.classList.toggle("activo");
+        }); 
+
+        const alternar2 = document.getElementsByClassName("alternar2")[0];
+
+        alternar2.addEventListener('click', function(e) {
+            e.currentTarget.classList.toggle("activo2");
+        });
+
+        const alternar3 = document.getElementsByClassName("alternar3")[0];
+
+        alternar3.addEventListener('click', function(e) {
+            e.currentTarget.classList.toggle("activo3");
+        });
+
+    </script>
+</body>
+</html>
